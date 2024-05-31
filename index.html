@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Bookshelf_Riki</title>
+  <link rel="icon" href="buku.jpg" type="png/image" sizes="300*500">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!--font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap" rel="stylesheet">
+
+  <!--icon-->
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+  <!-- Header -->
+<header class="head_bar">
+  <h1 class="head_bar__title">Bookshelf <span>DIGITAL</span></h1>
+</header>
+
+<main>
+<!-- Kotak Input -->
+<section class="input_section">
+    <div class="judul_kotak">
+      <h2>Masukkan Buku Baru</h2>
+    </div>
+
+    <div class="isi_kotak">
+      <form id="inputBook">
+        <div class="input">
+          <label for="inputBookTitle">Judul</label>
+          <input id="inputBookTitle" type="text" required>
+        </div>
+        <div class="input">
+          <label for="inputBookAuthor">Penulis</label>
+          <input id="inputBookAuthor" type="text" required>
+        </div>
+        <div class="input">
+          <label for="inputBookYear">Tahun</label>
+          <input id="inputBookYear" type="number" required>
+        </div>
+        <div class="input_inline">
+          <input id="inputBookIsComplete" type="checkbox">
+          <label for="inputBookIsComplete">Selesai dibaca</label>
+        </div>
+        <button id="bookSubmit" type="submit">Kirim</button>
+      </form>
+    </div>
+  </section>
+
+<!-- Kotak Search -->
+  <section class="search_section">
+    <div class="judul_kotak">
+      <h2>Cari Buku</h2>
+    </div>
+    <div class="isi_kotak">
+      <p>Kata Kunci</p>
+      <form id="searchBook">
+        <input id="searchBookTitle" type="text">
+        <button id="searchSubmit" type="submit">Cari</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Kotak Belum Selesai -->
+  <section class="book_shelf">
+    <div class="judul_kotak">
+      <h2>Belum selesai dibaca</h2>
+    </div>
+    <div class="isi_kotak">
+      <div id="incompleteBookshelfList" class="book_list">
+      </div>
+    </div>
+  </section>
+
+  <!-- Kotak sudah selesai -->
+  <section class="book_shelf">
+    <div class="judul_kotak">
+      <h2>Selesai dibaca</h2>
+    </div>
+    <div class="isi_kotak">
+      <div id="completeBookshelfList" class="book_list">
+      </div>
+    </div>
+  </section>
+  
+</main>
+
+<!--foother-->
+<footer>
+  <div class="socials">
+    <a href="https://www.instagram.com/rkihdyt?igsh=Zmc3NGttMnJ0Z2d6"><i data-feather="instagram"></i></a>
+    <a href="https://x.com/rikihidayatt27?t=GCaBzIx1avKMM6TlwnY5bQ&s=09"><i data-feather="twitter"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=100047547379477&mibextid=ZbWKwL"><i data-feather="facebook"></i></a>
+  </div>
+
+  <div class="credit">
+    <p>Created by <a href="">m.rikihidayat</a>.&copy; 2024.</p>
+  </div>
+</footer>
+
+<!-- Ikon -->
+<script>feather.replace()</script>
+<script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
+
+<script src="main.js"></script>
+</body>
+</html>
